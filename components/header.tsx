@@ -70,6 +70,8 @@ const Header = () => {
                     </div>
                 </div>  
             </div>
+            <div className="header-psudo"/>
+               
         </div>
      );
 }

@@ -2,10 +2,8 @@
 
 import { Tab } from "@headlessui/react";
 
-import GalleryTab from "../../components/image-gallery/gallery-tab";
+import GalleryTab from "@/components/image-gallery/gallery-tab";
 import Image, { StaticImageData } from "next/image";
-
-
 
 import './gallery-tab.css'
 
