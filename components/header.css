@@ -1,0 +1,28 @@
+.header {
+    overflow-y: hidden;
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+
+}
+
+.nav-bar {
+    width: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100vh;
+    overflow-y: scroll;
+    visibility: hidden;
+}
+
+.nav-bar-inner, .nav-bar:hover {
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #424242;
+}

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/providers/theme-provider"
 import "./globals.css";
+import { ThemeToggle } from "@/components/theme-toggle";
+import Header from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="fixed right-4 top-4">
+              <ThemeToggle />
+            </div>
+            <div className="flex">
+              <Header />
+              <div className="content-body">
+                {children}
+              </div>
+            </div>  
+          </ThemeProvider>
+        </body>
     </html>
   );
 }
