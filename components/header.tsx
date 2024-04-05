@@ -70,7 +70,7 @@ const Header = () => {
                     </div>
                 </div>  
             </div>
-            <div className="header-psudo"/>
+            <div className="header-psudo hidden md:flex"/>
                
         </div>
      );
