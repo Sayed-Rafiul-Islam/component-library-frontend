@@ -17,7 +17,7 @@ const Gallerypage = () => {
             <p className="dark:text-slate-600 mt-2">To use this you have to install <b>@headlessui/react</b></p>
             <p className="dark:text-slate-600 mt-2">Go to
             <Link 
-                className="text-slate-300 font-bold hover:text-white transition-all mx-2" 
+                className="dark:text-slate-300 text-slate-600 font-bold dark:hover:text-white hover:text-black mx-2" 
                 target="_blank" 
                 href='https://www.npmjs.com/package/@headlessui/react'
             >
@@ -29,7 +29,7 @@ const Gallerypage = () => {
         <div className="p-4">
             <h1 className="text-2xl font-bold mt-0">
                 <Link 
-                    className='text-slate-300 font-bold hover:text-white transition-all'
+                    className='dark:text-slate-300 text-slate-600 font-bold dark:hover:text-white hover:text-black'
                     href='https://github.com/Sayed-Rafiul-Islam/component-library-frontend/tree/main/components/image-gallery'
                 >
                     Source Codes
